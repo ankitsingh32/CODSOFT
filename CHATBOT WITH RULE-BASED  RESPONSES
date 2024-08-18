@@ -1,0 +1,31 @@
+def chatbot():
+    print("Welcome to the Simple Rule-Based Chatbot! Type 'exit' to end the conversation.")
+    
+    while True:
+        user_input = input("You: ").strip().lower()
+        
+        if user_input == "exit":
+            print("Chatbot: Goodbye! Have a great day!")
+            break
+        elif "hello" in user_input or "hi" in user_input or "hey" in user_input:
+            print("Chatbot: Hello! How can I help you today?")
+        elif "how are you" in user_input or "what's up" in user_input:
+            print("Chatbot: I'm just a program, but I'm here to assist you!")
+        elif "your name" in user_input:
+            print("Chatbot: I'm a simple rule-based chatbot.")
+        elif "time" in user_input:
+            from datetime import datetime
+            current_time = datetime.now().strftime("%H:%M:%S")
+            print(f"Chatbot: The current time is {current_time}.")
+        elif "date" in user_input:
+            from datetime import datetime    
+            current_date = datetime.now().strftime("%Y-%m-%d")
+            print(f"Chatbot: The current date is {current_date}.")
+        elif "bye" in user_input:
+            print("Chatbot: Goodbye! It was nice talking to you.")
+            break
+        else:
+            print("Chatbot: I'm sorry, I don't understand that. Can you please rephrase?")
+
+if __name__ == "__main__":
+    chatbot()
