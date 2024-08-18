@@ -1,0 +1,15 @@
+PS C:\Users\ankit> python -u "c:\Users\ankit\tempCodeRunnerFile.py"
+Welcome to the Simple Rule-Based Chatbot! Type 'exit' to end the conversation.
+You: hye
+Chatbot: I'm sorry, I don't understand that. Can you please rephrase?
+You: hello
+Chatbot: Hello! How can I help you today?
+You: what is your name ?
+Chatbot: I'm a simple rule-based chatbot.
+You: date
+Chatbot: The current date is 2024-08-18.
+You: time
+Chatbot: The current time is 14:40:54.
+You: exit
+Chatbot: Goodbye! Have a great day!
+PS C:\Users\ankit> 
